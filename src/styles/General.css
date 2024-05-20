@@ -1,0 +1,109 @@
+@import "./_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.hero {
+  background-image: url(https://picsum.photos/1200/800);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+}
+
+Form {
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.product-card-details img {
+  margin: auto;
+  width: 25%;
+  height: 25%;
+}
+
+.product-card-details {
+  width: 35%;
+}
+
+.product-card-details-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+
+.cards-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 15rem);
+  place-content: center;
+}
+
+.productlist-h1 {
+  margin: 2rem auto 2rem auto;
+}
+
+#button-none {
+  display: none;
+}
+
+.producto-add {
+  display: none;
+}
+
+.form-label .form-control-custom:focus {
+  border-color: #363636;
+  box-shadow: 0 0 0 0.1rem rgba(24, 24, 24, 0.25);
+}
+
+.btn-login {
+  padding: 10px 10px !important;
+  width: 120px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn-login:hover {
+  background-color: #363636 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .home-featured {
+    display: flex;
+  }
+
+  .home-featured-row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media screen and (min-width: 992px) {}
